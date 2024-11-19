@@ -1,0 +1,368 @@
+/* Fuentes */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+
+header {
+    background: linear-gradient(to right, #8d6e63, #d7ccc8);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #6d4c41;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5d4037;
+}
+
+/* Carrusel */
+
+#carousel {
+    position: relative;
+    margin: 40px auto;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.carousel-navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.carousel-navigation button:hover {
+    background-color: #6d4c41;
+}
+
+/* Sección Aprende, Ahorra y Crece */
+
+#aac-container {
+    background-color: #fdf8f2;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aac-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.aac-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aac-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.aac-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.aac-card h3 {
+    font-size: 20px;
+    color: #6d4c41;
+    margin-bottom: 10px;
+}
+
+.aac-card p {
+    font-size: 16px;
+    color: #5d4037;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.aac-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.aac-card ul li {
+    margin: 8px 0;
+    color: #8d6e63;
+    font-size: 16px;
+}
+
+.cta-button {
+    background-color: #a1887f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #8d6e63;
+}
+
+/* Consejos */
+
+#consejos-ahorro {
+    background-color: #fdf5e6;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tip-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tip-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.tip-card h3 {
+    color: #6d4c41;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    color: #5d4037;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Carrusel 2 */
+
+.carol {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.carol img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Calculadora */
+
+#calculadora {
+    background-color: #f8f3ed;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.calculator-inputs {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-inputs label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #5d4037;
+    text-align: left;
+}
+
+.calculator-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d7ccc8;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.calculator-inputs button {
+    background-color: #a1887f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-inputs button:hover {
+    background-color: #8d6e63;
+}
+
+.calculator-result {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #5d4037;
+}
+
+/* Pie de Página */
+footer {
+    background: #6d4c41;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d7ccc8;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
